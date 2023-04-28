@@ -5,40 +5,31 @@ body {
 }
 
 .header {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar {
   display: flex;
-  padding: 5px;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 5px;
+  max-width: 78%;
+  flex: 78%;
 }
 
 .logo {
-  max-width: 78%;
-  flex: 78%;
-  text-align: center;
-}
-
-.hamburger-menu {
   max-width: 20%;
   flex: 20%;
+  margin-top: 10px;
 }
 
 .logo-link {
   text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
 }
-
-.menu-icon {
-  margin-top: 20px;
-  float: right;
-  width: 40px;
-  cursor: pointer;
-}
-
-
 
 .content {
   background-image: url('images/headerBg.png');
@@ -48,22 +39,14 @@ body {
 }
 
 @media screen and (max-width: 920px) {
-  .mylogo {
-    justify-content: flex-start !important;
-  }
-
   .logo {
-    max-width: 48%;
-    flex: 48%;
+    max-width: 20%;
+    flex: 20%;
   }
 
-  .hamburger-menu {
-    max-width: 48%;
-    flex: 48%;
-  }
-
-  .menu-icon {
-    display: flex;
+  .navbar {
+    max-width: 76%;
+    flex: 76%;
   }
 
   .content {
@@ -71,14 +54,6 @@ body {
     background-repeat: no-repeat;
     display: flex;
     background-size: cover;
-  }
-
-  .snpashoot {
-    background-image: url('images/snapshoot.png');
-    background-repeat: no-repeat;
-    display: flex;
-    background-size: cover;
-    height: 220px;
   }
 }
 
@@ -107,29 +82,16 @@ body {
   list-style-type: none;
 }
 
-.social-icon {
-  margin-right: 20px;
+.transforScale {
   transition: transform 1s;
 }
 
-.social-icon:hover {
+.transforScale:hover {
   transform: scale(1.8);
 }
 
-
 /* style for snapshoot page */
-
 .snapshot-container {
   width: 100%;
   margin-top: 33px;
-}
-
-.snpashoot {
-  background-image: url('images/snapshoot.png');
-  background-repeat: no-repeat;
-  display: flex;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 333px;
 }
