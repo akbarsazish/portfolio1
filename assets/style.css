@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 5px;
+  padding: 6px;
   max-width: 78%;
   flex: 78%;
 }
@@ -36,6 +36,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   background-size: cover;
+  height: 660px;
 }
 
 @media screen and (max-width: 920px) {
@@ -57,16 +58,18 @@ body {
   }
 }
 
-.bit-text {
+.big-text {
   color: #091e42;
   font-size: 40px;
-  margin-top: 80px;
-  font-weight: 700;
-  line-height: 52px;
+  font-weight: bolder;
+  position: fixed;
+  top: 20%;
+  left: 10px;
 }
 
 .more-info {
   overflow-wrap: break-word;
+  margin-top: 28vh;
 }
 
 .lets-connect {
@@ -75,11 +78,12 @@ body {
 
 .social-part {
   display: flex;
-  padding-inline-start: 5px;
+  padding: 4px;
 }
 
 .social-item {
   list-style-type: none;
+  margin: 1px 10px 1px 1px;
 }
 
 .transforScale {
@@ -88,10 +92,4 @@ body {
 
 .transforScale:hover {
   transform: scale(1.8);
-}
-
-/* style for snapshoot page */
-.snapshot-container {
-  width: 100%;
-  margin-top: 33px;
 }

@@ -1,16 +1,8 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b> Portfolio </b></h3>
-
 </div>
-
-
 
 # 📗 Table of Contents
 
@@ -18,7 +10,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -65,11 +56,6 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
->Live Demo is not avialable yet
-
-> - [Live Demo On Gh-pages](https://akbarsazish.github.io/Portfolio)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
