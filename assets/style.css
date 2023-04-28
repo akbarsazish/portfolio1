@@ -3,3 +3,110 @@ body {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 78%;
+  flex: 78%;
+  text-align: center;
+}
+
+.hamburger-menu {
+  max-width: 20%;
+  flex: 20%;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.menu-icon {
+  margin-top: 20px;
+  float: right;
+  width: 40px;
+  cursor: pointer;
+}
+
+.mylogo {
+  float: left;
+  margin-left: 10px;
+}
+
+.content {
+  background-image: url('images/headerBg.png');
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+}
+
+@media screen and (max-width: 920px) {
+  .mylogo {
+    justify-content: flex-start !important;
+  }
+
+  .logo {
+    max-width: 48%;
+    flex: 48%;
+  }
+
+  .hamburger-menu {
+    max-width: 48%;
+    flex: 48%;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .content {
+    background-image: url('images/header-shapes mobile.png');
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+  }
+}
+
+.bit-text {
+  color: #091e42;
+  font-size: 40px;
+  margin-top: 80px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.more-info {
+  overflow-wrap: break-word;
+}
+
+.lets-connect {
+  color: #7f8cff;
+}
+
+.social-part {
+  display: flex;
+  padding-inline-start: 5px;
+}
+
+.social-item {
+  list-style-type: none;
+}
+
+.social-icon {
+  margin-right: 20px;
+  transition: transform 1s;
+}
+
+.social-icon:hover {
+  transform: scale(1.8);
+}
