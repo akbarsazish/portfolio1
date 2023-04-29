@@ -62,7 +62,7 @@ body {
   color: #091e42;
   font-size: 40px;
   font-weight: bolder;
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 10px;
 }
@@ -92,4 +92,254 @@ body {
 
 .transforScale:hover {
   transform: scale(1.8);
+}
+
+/* style for snapshoot part */
+.my-snpashoot {
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin: 0;
+}
+
+.snapshoot-card {
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  background-color: #fff;
+  box-shadow: 1 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 88px;
+  padding: 15px 5px;
+}
+
+.snapshoot {
+  background-image: url('images/snapshoot.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.headline-2 {
+  margin-top: 1px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.worke-expr {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 10px;
+}
+
+.exp-items {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.exp-item1 {
+  color: #344563;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.exp-item2,
+.exp-item3 {
+  color: #7a869a;
+}
+
+.exp-info {
+  padding: 10px;
+}
+
+.work-tech {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 10px;
+}
+
+.tech-items {
+  border-radius: 20px;
+  background-color: #ebebff;
+  color: #6070ff;
+  list-style-type: none;
+  width: 88px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.see-project {
+  color: #396df2;
+  width: 133px;
+  height: 55px;
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.snapshoot-profile {
+  background-image: url('images/Snapshoot Portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.snapshoot-profile1 {
+  background-image: url('images/Snapshoot Portfolio1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.snapshoot-profile2 {
+  background-image: url('images/Snapshoot Portfolio2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.about-me {
+  border-radius: 1px 88px 1px 1px;
+  transition: 0.3s;
+  margin-top: 88px;
+  background-color: #fff;
+  margin-left: -10px !important;
+  margin-right: -10px !important;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-size: 900;
+}
+
+.see-resume {
+  color: #396df2;
+  width: 155px;
+  height: 55px;
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.accordion {
+  margin-top: 33px;
+}
+
+.Languages {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.acc-icon {
+  right: 26px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.acc-icon-right {
+  right: 26px;
+  position: absolute;
+  margin-top: -8px;
+}
+
+.accordion-title,
+.acc-icon {
+  display: inline;
+  display: flex;
+}
+
+.accordion-items {
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.lan-icon {
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+}
+
+.lang {
+  display: inline;
+  margin-left: 33px;
+}
+
+.skills {
+  display: inline;
+  margin-left: 2px;
+}
+
+.contact-me {
+  background-image: url('images/Contact me.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 666px;
+  text-align: center;
+  padding: 1px -10px;
+}
+
+.contact-headline {
+  padding-top: 99px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.contact-text {
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+.form-container {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-button {
+  display: block;
+  color: #6070ff;
+  padding: 11px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #fff;
+}
+
+.get-intouch {
+  margin-left: 6px;
 }
