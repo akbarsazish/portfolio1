@@ -106,7 +106,7 @@ body {
 }
 
 .btnHover:hover {
-  background-color: #7f00ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
@@ -126,6 +126,7 @@ body {
   background-color: #e5e5e5;
   padding: 10px;
   margin: 0;
+  display: grid;
 }
 
 .snapshoot-card {
@@ -136,7 +137,8 @@ body {
   transition: 0.3s;
   margin-top: 88px;
   padding: 15px 5px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .snapshoot {
@@ -280,17 +282,27 @@ body {
 
 .accordion {
   margin-top: 33px;
+  padding-left: 10px;
 }
 
-.Languages {
-  margin-bottom: 5px;
+.accordion li {
+  list-style-type: none;
+}
+
+.skills {
+  display: inline;
   margin-left: 10px;
+  font-weight: bold;
 }
 
 .acc-icon {
   right: 26px;
   position: absolute;
   margin-top: 15px;
+}
+
+.acc-sub-ul {
+  padding-left: 1px;
 }
 
 .acc-icon-right {
@@ -306,27 +318,28 @@ body {
 }
 
 .accordion-items {
+  list-style-type: none;
+  margin-top: 22px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.acc-sub-items {
   background-color: #f7f7f9;
-  border-radius: 8px;
+  list-style-type: none;
+  padding: 11px;
   margin: 5px;
-  padding: 10px;
+  border-radius: 8px;
 }
 
 .lan-icon {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 30px;
 }
 
 .lang {
   display: inline;
   margin-left: 33px;
-}
-
-.skills {
-  display: inline;
-  margin-left: 2px;
 }
 
 .contact-me {
