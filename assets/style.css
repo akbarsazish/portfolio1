@@ -1,12 +1,14 @@
 
 body {
-  background-color: #fff;
+  background-color: #f7f7f9;
   font-family: 'Poppins', sans-serif;
+  margin: 1px;
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .navbar {
@@ -36,7 +38,11 @@ body {
   background-repeat: no-repeat;
   display: flex;
   background-size: cover;
-  height: 660px;
+  height: auto;
+  width: 100%;
+  padding-top: 10%;
+  border-radius: 1px 1px 1px 88px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 920px) {
@@ -67,9 +73,14 @@ body {
   left: 10px;
 }
 
+.public-info {
+  height: 600px;
+  padding: 6px;
+}
+
 .more-info {
   overflow-wrap: break-word;
-  margin-top: 28vh;
+  margin-top: 25vh;
 }
 
 .lets-connect {
@@ -83,7 +94,7 @@ body {
 
 .social-item {
   list-style-type: none;
-  margin: 1px 10px 1px 1px;
+  margin: 1px 22px 1px 1px;
 }
 
 .transforScale {
@@ -92,6 +103,22 @@ body {
 
 .transforScale:hover {
   transform: scale(1.8);
+}
+
+.btnHover:hover {
+  background-color: #7f00ff;
+  color: #fff;
+}
+
+.btnPressed:active {
+  background-color: #5300d5;
+  color: #fff;
+}
+
+.btnDisabled:disabled {
+  background-color: #fff;
+  box-shadow: inset 10px 10px 5px #c1c1c1;
+  outline: none;
 }
 
 /* style for snapshoot part */
@@ -109,6 +136,7 @@ body {
   transition: 0.3s;
   margin-top: 88px;
   padding: 15px 5px;
+  display: grid;
 }
 
 .snapshoot {
@@ -125,6 +153,16 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-left: 10px;
+  margin-bottom: 1px;
+  color: #172b4d;
+}
+
+.about-me-headline {
+  color: #fff;
+  padding-top: 66px;
+  margin-bottom: 1px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .worke-expr {
@@ -150,7 +188,7 @@ body {
 }
 
 .exp-info {
-  padding: 10px;
+  padding: 1px 10px;
 }
 
 .work-tech {
@@ -181,6 +219,10 @@ body {
   padding: 10px;
   font-size: 18px;
   margin: 5px;
+}
+
+.text-color {
+  color: #344563;
 }
 
 .snapshoot-profile {
@@ -215,14 +257,13 @@ body {
   transition: 0.3s;
   margin-top: 88px;
   background-color: #fff;
-  margin-left: -10px !important;
-  margin-right: -10px !important;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-title {
-  font-size: 2.4rem;
-  font-size: 900;
+.about-header {
+  margin: 44px 1px 1px 1px;
 }
 
 .see-resume {
@@ -289,24 +330,18 @@ body {
 }
 
 .contact-me {
-  background-image: url('images/Contact me.png');
+  background-image: url('images/contact-mobile.png'), url('images/Contact me.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 666px;
+  background-size: cover;
   text-align: center;
-  padding: 1px -10px;
-}
-
-.contact-headline {
-  padding-top: 99px;
-  text-align: center;
-  font-size: 32px;
+  display: flex;
+  margin-top: 88px;
 }
 
 .contact-text {
   text-align: justify;
   padding: 10px 20px;
+  color: #fff;
 }
 
 .form-container {
@@ -326,20 +361,8 @@ body {
   border-radius: 5px;
 }
 
-.form-button {
-  display: block;
-  color: #6070ff;
-  padding: 11px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.form-button:hover {
-  background-color: #fff;
-}
-
 .get-intouch {
   margin-left: 6px;
+  float: left;
+  margin-bottom: 33px;
 }
