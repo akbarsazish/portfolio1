@@ -1,12 +1,14 @@
 
 body {
-  background-color: #fff;
+  background-color: #f7f7f9;
   font-family: 'Poppins', sans-serif;
+  margin: 1px;
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .navbar {
@@ -36,7 +38,11 @@ body {
   background-repeat: no-repeat;
   display: flex;
   background-size: cover;
-  height: 660px;
+  height: auto;
+  width: 100%;
+  padding-top: 10%;
+  border-radius: 1px 1px 1px 88px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 920px) {
@@ -62,14 +68,19 @@ body {
   color: #091e42;
   font-size: 40px;
   font-weight: bolder;
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 10px;
 }
 
+.public-info {
+  height: 600px;
+  padding: 6px;
+}
+
 .more-info {
   overflow-wrap: break-word;
-  margin-top: 28vh;
+  margin-top: 25vh;
 }
 
 .lets-connect {
@@ -83,7 +94,7 @@ body {
 
 .social-item {
   list-style-type: none;
-  margin: 1px 10px 1px 1px;
+  margin: 1px 22px 1px 1px;
 }
 
 .transforScale {
@@ -92,4 +103,279 @@ body {
 
 .transforScale:hover {
   transform: scale(1.8);
+}
+
+.btnHover:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.btnPressed:active {
+  background-color: #5300d5;
+  color: #fff;
+}
+
+.btnDisabled:disabled {
+  background-color: #fff;
+  box-shadow: inset 10px 10px 5px #c1c1c1;
+  outline: none;
+}
+
+/* style for snapshoot part */
+.my-snpashoot {
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin: 0;
+  display: grid;
+}
+
+.snapshoot-card {
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  background-color: #fff;
+  box-shadow: 1 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 88px;
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.snapshoot {
+  background-image: url('images/snapshoot.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.headline-2 {
+  margin-top: 1px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  color: #172b4d;
+}
+
+.about-me-headline {
+  color: #fff;
+  padding-top: 66px;
+  margin-bottom: 1px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.worke-expr {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 10px;
+}
+
+.exp-items {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.exp-item1 {
+  color: #344563;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.exp-item2,
+.exp-item3 {
+  color: #7a869a;
+}
+
+.exp-info {
+  padding: 1px 10px;
+}
+
+.work-tech {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 10px;
+}
+
+.tech-items {
+  border-radius: 20px;
+  background-color: #ebebff;
+  color: #6070ff;
+  list-style-type: none;
+  width: 88px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.see-project {
+  color: #396df2;
+  width: 133px;
+  height: 55px;
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.text-color {
+  color: #344563;
+}
+
+.snapshoot-profile {
+  background-image: url('images/Snapshoot Portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.snapshoot-profile1 {
+  background-image: url('images/Snapshoot Portfolio1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.snapshoot-profile2 {
+  background-image: url('images/Snapshoot Portfolio2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 77%;
+}
+
+.about-me {
+  border-radius: 1px 88px 1px 1px;
+  transition: 0.3s;
+  margin-top: 88px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  margin: 44px 1px 1px 1px;
+}
+
+.see-resume {
+  color: #396df2;
+  width: 155px;
+  height: 55px;
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.accordion {
+  margin-top: 33px;
+  padding-left: 10px;
+}
+
+.accordion li {
+  list-style-type: none;
+}
+
+.skills {
+  display: inline;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.acc-icon {
+  right: 26px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.acc-sub-ul {
+  padding-left: 1px;
+}
+
+.acc-icon-right {
+  right: 26px;
+  position: absolute;
+  margin-top: -8px;
+}
+
+.accordion-title,
+.acc-icon {
+  display: inline;
+  display: flex;
+}
+
+.accordion-items {
+  list-style-type: none;
+  margin-top: 22px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.acc-sub-items {
+  background-color: #f7f7f9;
+  list-style-type: none;
+  padding: 11px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.lan-icon {
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.lang {
+  display: inline;
+  margin-left: 33px;
+}
+
+.contact-me {
+  background-image: url('images/contact-mobile.png'), url('images/Contact me.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  margin-top: 88px;
+}
+
+.contact-text {
+  text-align: justify;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.form-container {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.get-intouch {
+  margin-left: 6px;
+  float: left;
+  margin-bottom: 33px;
 }
