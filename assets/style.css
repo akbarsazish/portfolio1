@@ -346,7 +346,6 @@ body {
   background-image: url('images/contact-mobile.png'), url('images/Contact me.png');
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   display: flex;
   margin-top: 88px;
 }
@@ -354,7 +353,8 @@ body {
 .contact-text {
   text-align: justify;
   padding: 10px 20px;
-  color: #fff;
+  color:#ebebff;
+  text-align: center;
 }
 
 .form-container {
