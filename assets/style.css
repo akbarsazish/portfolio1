@@ -26,20 +26,18 @@ body {
   width: 77%;
   flex-direction: row;
   justify-content: flex-end;
-
 }
 
 .menu-item {
-   flex-direction: column;
-   list-style-type: none;
-   transition: transform 1s;
+  flex-direction: column;
+  list-style-type: none;
+  transition: transform 1s;
 }
 
 .menu-item a {
-   text-decoration: none;
-   margin-right: 22px;
-   color: #344563;
-   
+  text-decoration: none;
+  margin-right: 22px;
+  color: #344563;
 }
 
 .menu-item:hover {
@@ -63,20 +61,11 @@ body {
   margin-left: 20px;
 }
 
-.logo {
-  max-width: 20%;
-  flex: 20%;
-}
-
-.navbar {
-  max-width: 76%;
-  flex: 76%;
-}
-
 .public-info {
- padding: 1% 16% !important;
- margin: 0 auto;
- font-size: 1.4em;
+  padding: 1% 16% !important;
+  margin: 0 auto;
+  font-size: 1.4em;
+  min-height: 600px;
 }
 
 .big-text {
@@ -87,23 +76,13 @@ body {
 .tonic-part {
   flex: 48%;
   max-width: 48%;
+  padding: 2% 1%;
 }
 
 .for-bg-img {
   background-size: cover !important;
   background-repeat: no-repeat;
-  background-position: center !important; 
-}
-
-.content {
-  display: flex;
-  border-bottom-left-radius: 100px;
-  background-color: #fff;
-}
-
-.public-info {
-  min-height: 600px;
-  padding: 6px;
+  background-position: center !important;
 }
 
 .lets-connect {
@@ -166,16 +145,12 @@ body {
   padding: 10px;
 }
 
-.snapshoot {    
+.snapshoot {
   flex: 48%;
   max-width: 48%;
   padding: 10px 5px;
   margin: 5px;
   border-radius: 8px;
-}
-
-.tonic-part {
-  padding: 2% 1%;
 }
 
 .headline-2 {
@@ -259,12 +234,16 @@ body {
 
 .content {
   background: url('./images/Header-bg.svg') !important;
+  display: flex;
+  border-bottom-left-radius: 100px;
+  background-color: #fff;
 }
 
 #snapshoot-profile {
   background: url('./images/snapshoot-portfolio.svg');
-  height:333px;
-} 
+  height: 333px;
+}
+
 #snapshoot-profile-one {
   background-image: url('images/snapshoot portfolio-des.svg');
 }
@@ -275,7 +254,7 @@ body {
 
 #snapshoot-profile-three {
   background-image: url('images/snapshoot portfolio-des-two.svg');
-}  
+}
 
 .contact-me {
   text-align: center;
@@ -308,7 +287,7 @@ body {
 }
 
 .about-part {
-   padding: 5px;
+  padding: 5px;
 }
 
 .about-header {
@@ -348,7 +327,6 @@ body {
   margin-top: 15px;
 }
 
-
 .acc-icon-right {
   right: 10%;
   position: absolute;
@@ -357,7 +335,6 @@ body {
 
 .accordion-title,
 .acc-icon {
-
   display: flex;
 }
 
@@ -413,7 +390,8 @@ body {
   border: none;
   border-radius: 5px;
 }
+
 .form-field input,
-.form-field textarea:focus{
+.form-field textarea:focus {
   outline: none;
 }
