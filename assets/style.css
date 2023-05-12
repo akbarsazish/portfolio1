@@ -232,6 +232,10 @@ body {
   color: #344563;
 }
 
+.text-color:hover {
+  filter: blur(1px);
+}
+
 .content {
   background: url('./images/Header-bg.svg') !important;
   display: flex;
