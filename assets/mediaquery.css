@@ -12,39 +12,37 @@
     margin-top: 66px;
   }
 
-  .contact-info {
-    width: 90%;
-  }
-
   .public-info {
     padding: 2% 4% !important;
   }
 
   .content {
-    background-image: url('./images/header-bg-mobile.svg') !important;
-  }
-
-  #snapshoot-profile {
-    background: url('./images/snapshoot-mob-one.svg');
-  }
-
-  #snapshoot-profile-one {
-    background-image: url('images/snapshoot-mob-two.svg');
-    padding-top: 66%;
-  }
-
-  #snapshoot-profile-two {
-    background-image: url('images/imagessnapshoot-mob-three.svg');
-    padding-top: 60%;
-  }
-
-  #snapshoot-profile-three {
-    background-image: url('images/imagessnapshoot-mob-four.svg');
-    padding-top: 66%;
+    background-image: url('./images/header-bg-mobile.svg');
+    background-size: cover;
+    border-radius: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-top: 17%;
+    width: auto;
+    color: #344563;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 20%;
   }
 
   .contact-me {
-    background-image: url('images/contact-form-shapes-mobile.svg'), url('images/Contact-me-mobile.svg');
+    background-image: url('images/contact-form-shapes-mobile.svg');
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 100px 0 0 0;
+    background-color: #6070ff;
+    background-position: unset;
+    background-size: 100% !important;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
   }
 
   .snapshoot-card {
@@ -103,12 +101,5 @@
   .lan-icon {
     display: inline-block;
     position: absolute;
-  }
-}
-
-/* for screen which is smallar than 375px */
-@media screen and (max-width: 375px) {
-  .contact-info {
-    width: 96%;
   }
 }
