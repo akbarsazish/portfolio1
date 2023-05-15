@@ -370,6 +370,14 @@ body {
   min-width: 295px;
   min-height: 220px;
   width: 100%;
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
+}
+
+.porject-img:hover {
+  opacity: 0.6;
+  transform: scale(0.98);
+  transition: transform 1s;
 }
 
 @media (min-width: 768px) {
