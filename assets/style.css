@@ -8,7 +8,7 @@ body {
 .header {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f4f5f7;
+  background-color: #fff;
   padding: 1% 8%;
 }
 
@@ -52,11 +52,28 @@ body {
   max-width: 20%;
   flex: 20%;
   margin-top: 10px;
-  transition: transform 1s ease;
+  filter: drop-shadow(0 0 10px #396df2);
+  animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
 }
 
 .logo:hover {
-  transform: rotate(360deg);
+  filter: drop-shadow(0 -10px 20px #fff);
+  animation: rotation 15s linear infinite;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
 }
 
 .logo-link {
@@ -126,7 +143,6 @@ body {
 
 /* style for snapshoot part */
 .my-snpashoot {
-  background-color: #fff;
   padding: 1% 10% 1% 10%;
 }
 
@@ -380,14 +396,19 @@ body {
   transition: transform 1s;
 }
 
+.content {
+  background-color: #fff !important;
+}
+
 @media (min-width: 768px) {
   .content {
-    background: url('./images/Header-bg.svg') !important;
-    background-color: #fff;
+    background: url('./images/Header-bg.svg');
     background-size: 100% !important;
-    padding-left: 16%;
-    padding-right: 16%;
-    padding-bottom: 8%;
+    background-repeat: no-repeat;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     border-radius: 0 0 0 100px;
   }
 

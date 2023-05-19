@@ -20,15 +20,10 @@
     background-image: url('./images/header-bg-mobile.svg');
     background-size: cover;
     border-radius: 0 0 0 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    padding-top: 17%;
-    width: auto;
-    color: #344563;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 20%;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 10%;
   }
 
   .contact-me {
