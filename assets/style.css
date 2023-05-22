@@ -419,7 +419,7 @@ body {
 
 /* mobile menu css */
 .mobile-menu {
-  background-color: #6070FF;
+  background-color: #6070ff;
   position: fixed;
   top: 0;
   right: 0;
@@ -435,7 +435,7 @@ body {
   margin-top: 33px;
 }
 
-.m-item a{
+.m-item a {
   padding: 2px 2px 8px 11px;
   text-decoration: none;
   font-size: 32px;
@@ -451,9 +451,6 @@ body {
   display: none;
 }
 
-
 #portfolioLink {
   padding-top: 50px;
-
 }
-
