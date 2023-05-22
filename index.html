@@ -19,10 +19,18 @@
                 <li class="menu-item"> <a href="#" class="menu-link"> Contact </a> </li>
             </ul>
             <div class="hamburger-menu">
-                <img class="menu-icon transforScale" src="assets/images/bargar.png" alt="Menu Icon">
+                <img onclick="openMobileMenu()" class="menu-icon transforScale" src="assets/images/bargar.png" alt="Menu Icon">
             </div>
           </nav>
       </header>
+      <div class="mobile-menu" id="mobile-menu">
+        <ul class="m-menu">
+            <li class="close-icon" onclick="closeMobileMenu()"> <img src="assets/images/close.svg" alt=""> </li>
+            <li class="m-item"> <a href="#" class="m-link"> Portfolio </a> </li>
+            <li class="m-item"> <a href="#" class="m-link"> About </a> </li>
+            <li class="m-item"> <a href="#" class="m-link"> Contact </a> </li>
+        </ul>
+      </div>
 
       <div class="content for-bg-img">
           <div class="public-info">
@@ -203,5 +211,6 @@
             </div>
         </div>
     </section>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

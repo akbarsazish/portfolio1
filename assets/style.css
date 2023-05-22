@@ -424,3 +424,24 @@ body {
     text-align: center;
   }
 }
+
+/* mobile menu css */
+.mobile-menu {
+  background-color: #6070FF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 5;
+  opacity: 0.9;
+}
+
+.m-menu {
+  list-style-type: none;
+}
+
+.m-menu a{
+  text-decoration: none;
+}
