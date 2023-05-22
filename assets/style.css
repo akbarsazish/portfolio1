@@ -438,24 +438,22 @@ body {
 .m-item a{
   padding: 2px 2px 8px 11px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 32px;
   color: #fff;
   display: block;
   transition: 0.3s;
-  margin-top: 22px;
+  margin-top: 5px;
 }
 
 .close-icon {
   position: absolute;
-  right: 25px;
-  font-family: 55px;
-  margin-right: 44px;
+  right: 55px;
   display: none;
 }
 
 
 #portfolioLink {
-  padding-top: 100px;
+  padding-top: 50px;
 
 }
 
