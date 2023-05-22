@@ -443,6 +443,8 @@ body {
   display: block;
   transition: 0.3s;
   margin-top: 5px;
+  font-family: 'Poppins';
+  font-weight: 600;
 }
 
 .close-icon {
