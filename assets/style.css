@@ -517,6 +517,11 @@ body {
   cursor: pointer;
 }
 
+.icon-cancel:hover {
+  background-color:red;
+  transition: background-color 2s ease;
+}
+
 .exp-detail-items {
   display: grid;
   grid-template-columns: 3fr 1fr;
