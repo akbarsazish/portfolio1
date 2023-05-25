@@ -495,7 +495,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: auto;
-
 }
 
 .details-img-wrapper{
@@ -533,6 +532,7 @@ body {
 .project-info {
   display: grid;
   grid-template-columns:  3fr 1fr;
+  padding: 10px;
 }
 
 .see-source-img, .see-live-img {
@@ -550,6 +550,10 @@ body {
 .popupTech {
   border-bottom: 1px solid #ebecf0;
   padding-bottom: 11px;
+}
+
+ul.worke-expr-details::marker {
+  color: red;
 }
 
 #back-drop {

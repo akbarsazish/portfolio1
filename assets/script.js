@@ -10,8 +10,6 @@ function closeMobileMenu(){
     document.getElementById("close-icon").style.display = "none";
 }
 
-
-
 const projectsData = [
   {
     id: '1',
@@ -21,7 +19,6 @@ const projectsData = [
     img: './assets/images/snapshoot-portfolio.svg',
     demoLink: 'https://akbarsazish.github.io/portfolio',
     sourceLink: 'https://akbarsazish.github.io/portfolio',
-
   },
   {
     id: '2',
@@ -58,6 +55,7 @@ const projectsData = [
     img: './assets/images/snapshoot portfolio-des.svg',
     demoLink: 'https://starfoods.ir',
     sourceLink: 'https://starfoods.ir',
+    sourceLink: 'https://khooshpul.com',
   },
 
 ];
@@ -66,13 +64,14 @@ const projectsData = [
 const porjectModal = document.getElementById('myProjects');
 
 function showProjects(){
+
     porjectModal.innerHTML=projectsData.map((project)=>{
         const {
-            id, title, desc, technogies, img, demoLink, sourceLink,
+            id, title, desc, technogies, img, demoLink, sourceLink
           } = project;
 
-          let imgFirst;
-          let imgSecond;
+          let imgFirst = "";
+          let imgSecond =""
           if(id % 2 === 0){
             imgFirst = `<div class="snapshoot for-bg-img" id="snapshoot-profile">
                            <img class="porject-img" src="${img}" alt="image">
@@ -85,7 +84,7 @@ function showProjects(){
 
           return  `
                 <div class="snapshoot-card">
-                   ${imgFirst}
+                     ${imgFirst} 
                     <div class="tonic-part">
                         <h2 class="headline-2"> ${title} </h2>
                         <ul class="worke-expr">
@@ -135,7 +134,7 @@ function showProjects(){
                             </ul>
                             <span class="button-container">
                                 <button type="button" class="popupBtn see-project btnHover btnPressed btnDisabled"> <a href="${demoLink}"> See live  <img src="assets/images/Icon-go-live.svg" alt="see live" class="see-live-img"> </a> </button>
-                                <button type="button" class="popupBtn see-project btnHover btnPressed btnDisabled"> <a href="${demoLink}"> See Source <img src="assets/images/icon-gitHub.png" alt="see source" class="see-source-img"> </a> </button>
+                                <button type="button" class="popupBtn see-project btnHover btnPressed btnDisabled"> <a href="${sourceLink}"> See Source <img src="assets/images/icon-gitHub.png" alt="see source" class="see-source-img"> </a> </button>
                         </span>
                         </div>
                     </div>
@@ -152,7 +151,7 @@ showProjects();
 function showProjectDetails(projedctId){
     document.getElementById(projedctId).style.display="block";
 }
+
 function hideProjectDetails(projedctId){
     document.getElementById(projedctId).style.display="none";
 }
-
