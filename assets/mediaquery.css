@@ -97,4 +97,9 @@
     display: inline-block;
     position: absolute;
   }
+
+  .project-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
