@@ -497,6 +497,26 @@ body {
   overflow: auto;
 }
 
+.show-modal {
+  display: block;
+  transition: 1s;
+  animation: fade-in 0.7s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popupBtn a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .details-img-wrapper{
   width: 100%;
   max-height: 100%;
@@ -515,6 +535,11 @@ body {
   border-radius: 3px;
   margin-top: 15px;
   cursor: pointer;
+}
+
+.icon-cancel:hover {
+  background-color:red;
+  transition: background-color 2s ease;
 }
 
 .exp-detail-items {

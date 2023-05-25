@@ -163,8 +163,9 @@ function showProjects(){
 
 showProjects();
 
-function showProjectDetails(projedctId){
-    document.getElementById(projedctId).style.display="block";
+function showProjectDetails(projectId) {
+  var modal = document.getElementById(projectId);
+  modal.classList.add("show-modal");
 }
 
 function hideProjectDetails(projedctId){
