@@ -19,6 +19,9 @@ const projectsData = [
     img: './assets/images/snapshoot-portfolio.svg',
     demoLink: 'https://akbarsazish.github.io/portfolio',
     sourceLink: 'https://akbarsazish.github.io/portfolio',
+    ccompany:'Alborz',
+    positon: 'back end dev',
+    year: '2021'
   },
   {
     id: '2',
@@ -28,6 +31,9 @@ const projectsData = [
     img: './assets/images/snapshoot portfolio-des.svg',
     demoLink: 'https://starfoods.ir',
     sourceLink: 'https://starfoods.ir',
+    ccompany:'Alborz1',
+    positon: 'back end dev1',
+    year: '20211'
   },
   {
     id: '3',
@@ -37,6 +43,9 @@ const projectsData = [
     img: './assets/images/snapshoot-portfolio-des-one.svg',
     demoLink: 'https://star4.ir',
     sourceLink: 'https://star4.ir',
+    ccompany:'Alborz2',
+    positon: 'back end dev2',
+    year: '20212'
   },
   {
     id: '4',
@@ -46,6 +55,9 @@ const projectsData = [
     img: './assets/images/snapshoot portfolio-des-two.svg',
     demoLink: 'https://khooshpul.com',
     sourceLink: 'https://khooshpul.com',
+    ccompany:'Alborz3',
+    positon: 'back end dev3',
+    year: '20213'
   },
   {
     id: '5',
@@ -56,6 +68,9 @@ const projectsData = [
     demoLink: 'https://starfoods.ir',
     sourceLink: 'https://starfoods.ir',
     sourceLink: 'https://khooshpul.com',
+    ccompany:'Alborz4',
+    positon: 'back end dev4',
+    year: '20214'
   },
 
 ];
@@ -67,7 +82,7 @@ function showProjects(){
 
     porjectModal.innerHTML=projectsData.map((project)=>{
         const {
-            id, title, desc, technogies, img, demoLink, sourceLink
+            id, title, desc, technogies, img, demoLink, sourceLink, ccompany, positon, year
           } = project;
 
           let imgFirst = "";
@@ -88,9 +103,9 @@ function showProjects(){
                     <div class="tonic-part">
                         <h2 class="headline-2"> ${title} </h2>
                         <ul class="worke-expr">
-                            <li class="exp-items exp-item1"> CANOPY  </li>
-                            <li class="exp-items exp-item2"> Back End Dev  </li>
-                            <li class="exp-items exp-item3"> 2015  </li>
+                            <li class="exp-items exp-item1"> ${ccompany}  </li>
+                            <li class="exp-items exp-item2"> ${positon}  </li>
+                            <li class="exp-items exp-item3"> ${year}  </li>
                         </ul>
                         <p class="exp-info text-color"> ${desc} </p>
                         <ul class="work-tech">
@@ -111,9 +126,9 @@ function showProjects(){
                     </span>
                     <h2 class="headline-2"> ${title} </h2>
                     <ul class="worke-expr-details">
-                        <li class="exp-detail-items exp-item1"> CANOPY  </li>
-                        <li class="exp-detail-items exp-item2"> Back End Dev  </li>
-                        <li class="exp-detail-items exp-item3"> 2015  </li>
+                        <li class="exp-detail-items exp-item1"> ${ccompany}  </li>
+                        <li class="exp-detail-items exp-item2"> ${positon} </li>
+                        <li class="exp-detail-items exp-item3"> ${year}  </li>
                     </ul>
                     <div class="details-img-wrapper">
                         <img class="details-img" src="${img}" alt="image">
