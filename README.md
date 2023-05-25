@@ -118,6 +118,12 @@ You can deploy it with your hosting provider of your choise.
 - Twitter: [Solomon](https://twitter.com/Solomon57320119)
 - LinkedIn: [Solomon](https://www.linkedin.com/in/solomon-kidanu-62a994232/)
 
+👤 **Fernando Montes**
+
+- GitHub: [@Fernando426](https://github.com/Fernando426)
+- Twitter: [@Fernando_426_](https://twitter.com/Fernando_426_)
+- LinkedIn: [Fernando Montes](https://www.linkedin.com/in/fernando-jose-montes-linares-523822270/?originalSubdomain=ve)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
