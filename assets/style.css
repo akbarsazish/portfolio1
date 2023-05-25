@@ -462,29 +462,29 @@ body {
 
 /* popup styles */
 .modal {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: #c1c7c0;
-  background-color: rgba(0,0,0,0.4); 
-  -webkit-animation-name: fadeIn; 
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadein;
   -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-name: fadein;
+  animation-duration: 0.4s;
 }
 
 .porject-details {
   background-color: #fefefe;
   width: 80%;
   max-height: 90%;
-  -webkit-animation-name: slideIn;
+  -webkit-animation-name: slidein;
   -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
+  animation-name: slidein;
   animation-duration: 0.4s;
   position: fixed;
   top: 50%;
@@ -507,6 +507,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -517,7 +518,7 @@ body {
   color: #6070ff;
 }
 
-.details-img-wrapper{
+.details-img-wrapper {
   width: 100%;
   max-height: 100%;
   position: relative;
@@ -530,15 +531,15 @@ body {
 }
 
 .icon-cancel {
-  position: absolute; 
-  right: 25px;  
+  position: absolute;
+  right: 25px;
   border-radius: 3px;
   margin-top: 15px;
   cursor: pointer;
 }
 
-.icon-cancel:hover {
-  background-color:red;
+.icon-cancel :hover {
+  background-color: red;
   transition: background-color 2s ease;
 }
 
@@ -546,21 +547,18 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   justify-items: start;
-}
-
-.exp-detail-items {
-  display: inline-block;
   margin-right: 33px;
   list-style-type: circle;
 }
 
 .project-info {
   display: grid;
-  grid-template-columns:  3fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding: 10px;
 }
 
-.see-source-img, .see-live-img {
+.see-source-img,
+.see-live-img {
   width: 20px;
   height: 22px;
   margin-bottom: -5px;
@@ -594,26 +592,26 @@ ul.worke-expr-details::marker {
 }
 
 /* create custome scroll bar */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #6070ff #ffffff;
-  }
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #6070ff #fff;
+}
 
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #6070ff;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #6070ff;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
 
-  .porject-details::-webkit-scrollbar {
-    width: 1px;
-    scrollbar-color: #c1c7c0;
-  }
+.porject-details::-webkit-scrollbar {
+  width: 1px;
+  scrollbar-color: #c1c7c0;
+}
