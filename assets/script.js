@@ -83,10 +83,7 @@ function showProjects(){
                         </div>`
            }
 
-          
-
           return  `
-            
                 <div class="snapshoot-card">
                    ${imgFirst}
                     <div class="tonic-part">
@@ -108,10 +105,10 @@ function showProjects(){
                  </div>
             
 
-                <div  id="prDetails${id}" class="modal">
-                  <div class="porject-details">
+                <div id="prDetails${id}" class="modal">
+                  <div class="porject-details" id="porject-details">
                     <span class="close-popup">
-                        <img class="icon-cancel" src="assets/images/icon-cancel.svg" alt="cancel">
+                        <img id="close-popup" onclick="hideProjectDetails('prDetails'+${id})" class="icon-cancel" src="assets/images/icon-cancel.svg" alt="cancel">
                     </span>
                     <h2 class="headline-2"> ${title} </h2>
                     <ul class="worke-expr-details">
@@ -124,10 +121,6 @@ function showProjects(){
                     </div>
                     <div class="project-info">
                         <div class="info-text">
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
-                            </p>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
@@ -159,3 +152,7 @@ showProjects();
 function showProjectDetails(projedctId){
     document.getElementById(projedctId).style.display="block";
 }
+function hideProjectDetails(projedctId){
+    document.getElementById(projedctId).style.display="none";
+}
+
