@@ -621,3 +621,10 @@ ul.worke-expr-details::marker {
   scrollbar-color: #c1c7c0;
 }
 
+.error-message {
+  color: red;
+  margin-top: 10px;
+  display: none;
+  transition: 0.3s;
+}
+
