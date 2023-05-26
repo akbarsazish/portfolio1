@@ -203,3 +203,18 @@ function validateForm(event) {
       document.getElementById('message').value = formData.message;
     }
   }
+  
+  function storeFormData() {
+    var formData = {
+      name: document.getElementById('name').value, 
+      email: document.getElementById('email').value, 
+      message: document.getElementById('message').value 
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+
+  //when page load it load form data from local storage
+  window.onload = function() {
+    loadFormData();
+  };
