@@ -172,6 +172,9 @@ function hideProjectDetails(projedctId){
     document.getElementById(projedctId).style.display="none";
 }
 
+/**
+  * Form Validation function
+*/
 
 function validateForm(event) {
     var email = document.getElementById("email");
