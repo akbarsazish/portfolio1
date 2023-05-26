@@ -190,8 +190,14 @@ function validateForm(event) {
     }
   }
 
-  // Get data from form feilds
 
+
+/**
+  * local storage funcitons are geting data from form and save it into brower
+*/
+
+
+  // Get data from form feilds
   function loadFormData() {
     var formData = localStorage.getItem('formData'); 
 
@@ -218,3 +224,11 @@ function validateForm(event) {
   window.onload = function() {
     loadFormData();
   };
+
+   // when any input field change it will save the data to local storage
+   var formFields = document.querySelectorAll('input, textarea');
+   formFields.forEach(function(field) {
+     field.addEventListener('input', function() {
+       storeFormData();
+     });
+   });
