@@ -189,3 +189,15 @@ function validateForm(event) {
       errorMessage.style.display = "none";
     }
   }
+
+  function loadFormData() {
+    var formData = localStorage.getItem('formData'); 
+
+    if (formData) {
+      formData = JSON.parse(formData); 
+
+      document.getElementById('name').value = formData.name; 
+      document.getElementById('email').value = formData.email;
+      document.getElementById('message').value = formData.message;
+    }
+  }
