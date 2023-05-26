@@ -190,6 +190,8 @@ function validateForm(event) {
     }
   }
 
+  // Get data from form feilds
+
   function loadFormData() {
     var formData = localStorage.getItem('formData'); 
 
