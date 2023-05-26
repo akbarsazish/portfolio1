@@ -179,7 +179,7 @@ function validateForm(event) {
     var email = email.value;
     
     if (email !== email.toLowerCase()) {
-      errorMessage.textContent = "Email must be in lowercase.";
+      errorMessage.textContent = "Email must be in lowercase.exp: ali@gmail.com";
       errorMessage.style.display = "block";
       event.preventDefault(); 
     } else {
