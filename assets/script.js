@@ -171,3 +171,18 @@ function showProjectDetails(projectId) {
 function hideProjectDetails(projedctId){
     document.getElementById(projedctId).style.display="none";
 }
+
+
+function validateForm(event) {
+    var email = document.getElementById("email");
+    var errorMessage = document.getElementById("error-msg");
+    var email = email.value;
+    
+    if (email !== email) {
+      errorMessage.textContent = "Email must be in lowercase.";
+      errorMessage.style.display = "block";
+      event.preventDefault(); 
+    } else {
+      errorMessage.style.display = "none";
+    }
+  }

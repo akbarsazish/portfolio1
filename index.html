@@ -114,17 +114,19 @@
                 <p class="contact-text"> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
                     I’d love to help with it!</p>
                 <div class="form-container">
-                    <form action="https://formspree.io/f/xpzenazb" method="post">
+                    <form action="https://formspree.io/f/xpzenazb" method="post" id="contact-form">
                         <div class="form-field">
                             <input type="text" id="name" maxlength="30" name="name" placeholder="Full name " required>
                         </div>
                         <div class="form-field">
                             <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                         </div>
+                    
                         <div class="form-field">
                             <textarea id="message" maxlength="500" name="message" placeholder="Write your message here..." rows="6" required></textarea>
                         </div>
-                        <button type="submit" class="see-project get-intouch btnHover btnPressed btnDisabled"> Get in touch </button>
+                        <button onclick="validateForm(event)" type="submit" class="see-project get-intouch btnHover btnPressed btnDisabled" id="submit-button"> Get in touch </button>
+                        <div id="error-msg" class="error-message"></div>
                     </form>
                 </div>
             </div>
