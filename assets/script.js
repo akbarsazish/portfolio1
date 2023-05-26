@@ -10,7 +10,7 @@ function closeMobileMenu(){
     document.getElementById("close-icon").style.display = "none";
 }
 
-const projectsData = [
+const data = [
   {
     id: '1',
     title: 'first project',
@@ -80,7 +80,7 @@ const porjectModal = document.getElementById('myProjects');
 
 function showProjects(){
 
-    porjectModal.innerHTML=projectsData.map((project)=>{
+    porjectModal.innerHTML=data.map((project)=>{
         const {
             id, title, desc, technogies, img, demoLink, sourceLink, ccompany, positon, year
           } = project;
@@ -137,7 +137,7 @@ function showProjects(){
                         <div class="info-text">
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             </p>
                         </div>
                         <div class="tech-and-btn">

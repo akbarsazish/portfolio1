@@ -480,8 +480,8 @@ body {
 
 .porject-details {
   background-color: #fefefe;
-  width: 80%;
-  max-height: 90%;
+  width: 66%;
+  height: 90%;
   -webkit-animation-name: slidein;
   -webkit-animation-duration: 0.4s;
   animation-name: slidein;
@@ -500,7 +500,7 @@ body {
 .show-modal {
   display: block;
   transition: 1s;
-  animation: fade-in 0.7s ease-in;
+  animation: fade-in 0.5s ease-in;
 }
 
 @keyframes fade-in {
@@ -520,14 +520,18 @@ body {
 
 .details-img-wrapper {
   width: 100%;
-  max-height: 100%;
-  position: relative;
+  height: 44vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .details-img {
   width: 100%;
-  max-height: 100%;
+  max-height:43vh;
   margin: 0 auto;
+  position: absolute;
 }
 
 .icon-cancel {
@@ -544,7 +548,7 @@ body {
 }
 
 .exp-detail-items {
-  display: grid;
+  display: inline-block;
   grid-template-columns: 3fr 1fr;
   justify-items: start;
   margin-right: 33px;
@@ -555,6 +559,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 10px;
+  gap: 3px;
 }
 
 .see-source-img,
@@ -612,6 +617,6 @@ ul.worke-expr-details::marker {
 }
 
 .porject-details::-webkit-scrollbar {
-  width: 1px;
+  width: 10px;
   scrollbar-color: #c1c7c0;
 }
