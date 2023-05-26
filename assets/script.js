@@ -178,7 +178,7 @@ function validateForm(event) {
     var errorMessage = document.getElementById("error-msg");
     var email = email.value;
     
-    if (email !== email) {
+    if (email !== email.toLowerCase()) {
       errorMessage.textContent = "Email must be in lowercase.";
       errorMessage.style.display = "block";
       event.preventDefault(); 
