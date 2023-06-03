@@ -190,3 +190,45 @@ function validateForm(event) {
     }
   }
 
+
+
+/**
+  * local storage funcitons are geting data from form and save it into brower
+*/
+
+
+  // Get data from form feilds
+  function loadFormData() {
+    var formData = localStorage.getItem('formData'); 
+
+    if (formData) {
+      formData = JSON.parse(formData); 
+
+      document.getElementById('name').value = formData.name; 
+      document.getElementById('email').value = formData.email;
+      document.getElementById('message').value = formData.message;
+    }
+  }
+  
+  function storeFormData() {
+    var formData = {
+      name: document.getElementById('name').value, 
+      email: document.getElementById('email').value, 
+      message: document.getElementById('message').value 
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+
+  //when page load it load form data from local storage
+  window.onload = function() {
+    loadFormData();
+  };
+
+   // when any input field change it will save the data to local storage
+   var formFields = document.querySelectorAll('input, textarea');
+   formFields.forEach(function(field) {
+     field.addEventListener('input', function() {
+       storeFormData();
+     });
+   });
