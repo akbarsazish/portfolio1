@@ -177,7 +177,7 @@ function hideProjectDetails(projedctId){
 */
 
 function validateForm(event) {
-    var email = document.getElementById("email");
+    var email = document.getElementById("emial");
     var errorMessage = document.getElementById("error-msg");
     var email = email.value;
     
@@ -186,7 +186,7 @@ function validateForm(event) {
       errorMessage.style.display = "block";
       event.preventDefault(); 
     } else {
-      errorMessage.style.display = "none";
+      errorMesage.style.display = "none";
     }
   }
 
