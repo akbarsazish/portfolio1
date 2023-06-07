@@ -13,15 +13,15 @@ function closeMobileMenu(){
 const data = [
   {
     id: '1',
-    title: 'first project',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    img: './assets/images/snapshoot-portfolio.svg',
-    demoLink: 'https://akbarsazish.github.io/portfolio',
-    sourceLink: 'https://akbarsazish.github.io/portfolio',
-    ccompany:'Alborz',
-    positon: 'back end dev',
-    year: '2021'
+    title: 'Starfoods',
+    desc: 'Starfoods is a leading online shopping site offering a vast selection of products. With a user-friendly interface, it provides a seamless shopping experience. From  home goods to toys, Starfoods has it all. Enjoy secure payments, fast shipping, and excellent customer service. Start exploring and find your perfect purchase today!',
+    technogies: ['CSS', 'HTML', 'JavScript', 'Bootstrap', 'SQL Server'],
+    img: './assets/images/snapshoot-portfolio.png',
+    demoLink: 'https://starfoods.ir',
+    sourceLink: 'https://github.com/akbarsazish/starfoods',
+    ccompany:'Hajizada Trading',
+    positon: 'Front-end Developer',
+    year: '2022'
   },
   {
     id: '2',
@@ -112,6 +112,8 @@ function showProjects(){
                             <li class="tech-items"> ${technogies[0]} </li>
                             <li class="tech-items"> ${technogies[1]} </li>
                             <li class="tech-items"> ${technogies[2]}  </li>
+                            <li class="tech-items"> ${technogies[3]}  </li>
+                            <li class="tech-items"> ${technogies[4]}  </li>
                         </ul>
                          <button type="button" id="seeProject" onclick="showProjectDetails('prDetails'+${id})" class="see-project btnHover btnPressed btnDisabled"> See Project </button> 
                     </div>
@@ -135,10 +137,7 @@ function showProjects(){
                     </div>
                     <div class="project-info">
                         <div class="info-text">
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </p>
+                            <p> ${desc} </p>
                         </div>
                         <div class="tech-and-btn">
                             <ul class="work-tech popupTech">
